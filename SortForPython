@@ -1,0 +1,18 @@
+#简单冒泡排序
+def Bubble_Sort(List):
+    count = len(List)
+    for i in range(0,count-1):
+        for j in range(0,count-1):
+            if List[j] < List[j+1]:
+                List[j],List[j+1] = List[j+1],List[j]
+    return List
+
+#简单选择排序
+def Select_Sort(List):
+    count = len(List) 
+    for i in range(0,count):
+        for j in range (i+1,count):
+            if List[i] < List[j]:
+                List[i],List[j] = List[j],List[i]
+    return List
+    
